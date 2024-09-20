@@ -1,0 +1,362 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie Design</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container"> 
+            <div class="logo-container">
+                
+                <h1 class="logo">bHa</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"> <a href="">Home</a> </li>
+                    <li class="menu-list-item"> <a href="">Movies</a> </li>
+                    <li class="menu-list-item"> <a class="sectionSeries" href="">Series</a> </li>
+                    <li class="menu-list-item"> <a class="sectionPopular" href="">Popular</a> </li>
+                    <li class="menu-list-item"> <a class="sectionTrends" href="">Trends</a> </li>
+                </ul>
+            </div>
+            
+            <div class="profile-container">
+                <img class="profile-picture" src="https://res.cloudinary.com/bhanuimages/image/upload/v1699037637/BHANU_HOSTEL-removebg-preview_i5etaz.png" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background:linear-gradient(to bottom, rgba(0,0,0,0), #151515),url('https://4kwallpapers.com/images/walls/thumbs_3t/17131.jpeg')">
+                
+                 <div class="discription-main-page"> 
+                    <p class="featured-desc"> Welcome to Shadow Video
+                        Join Prime to watch the latest movies, TV shows and award-winning Free Originals Contents By Just  <span style="color:ff6d2e;">₹149 </span> </p>
+                 </div>
+                
+                 <button class="featured-button">  WATCH </button>
+            </div>
+
+<div id="sectionhome">
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">New Releces</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://v3img.voot.com/resizeMedium,w_256,h_341/v3Storage/assets/3x4-1724955928331.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button " onclick="playVideo()">Watch</button>
+
+                            <div id="videoModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close" onclick="closeVideo()">&times;</span>
+                                    <iframe id="youtubeVideo" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/CAF4DA51-72E6-414D-A749-94971C483F8F/0-2x3.jpg?width=305&updatedTime=2024-08-30T10:51:48Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/2C7BF8C8-A72C-4DB7-BD96-F78FE6EC8755/0-2x3.jpg?width=305&updatedTime=2024-08-24T12:08:54Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Storm</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/F63FC0C0-475A-47FC-9F76-B57017B1753A/0-2x3.jpg?width=305&updatedTime=2024-08-24T12:13:02Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">1917</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/A940C2E8-F391-4AE3-9712-FA69973E557B/0-2x3.jpg?width=305&updatedTime=2024-08-24T12:11:27Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Avengers</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/8C01C489-48A1-4A4C-BF5E-0FB4A5240598/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:53:59Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/594D54EE-4F0F-445D-97C9-5475B7510CA4/0-2x3.jpg?width=305&updatedTime=2024-08-17T15:19:31Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+</div>  
+        
+        
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Recently Added</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/F355175F-1AC7-4565-82C2-C730F630AEFA/0-2x3.jpg?width=305&updatedTime=2024-08-24T12:07:09Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/3DB2AB21-F910-417D-88E3-6EE7D6AF8858/0-2x3.jpg?width=305&updatedTime=2024-08-24T12:04:45Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/BD3B8A3F-CCAA-4B4E-88D9-A7369D7BAE40/0-2x3.jpg?width=305&updatedTime=2024-08-03T10:27:25Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/40C1A2B3-1D99-4CB5-9C7C-B9336C760507/0-2x3.jpg?width=305&updatedTime=2024-07-23T18:13:50Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/9F179A44-DEA8-49DE-954A-16AE3E823BCB/0-2x3.jpg?width=305&updatedTime=2024-08-12T05:54:00Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/1B7581A9-E613-4347-8410-35180D09476E/0-2x3.jpg?width=305&updatedTime=2024-08-17T15:20:16Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/B40B4D8C-B00D-4600-B87C-8B4667807021/0-2x3.jpg?width=305&updatedTime=2024-08-17T15:19:00Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('https://images.wallpapersden.com/image/wxl-netflix-dark_71641.jpg');">
+                <img class="featured-title" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEUQEBAAAAD///8REREFBQUNDQ0ICAj8/Pz5+fkyMjIiIiLNzc3q6uoVFRXf398fHx/b29soKCjx8fGJiYk4ODgrKytDQ0O2trZJSUldXV3U1NTm5uYaGhpWVlZkZGSXl5d+fn7CwsKioqKQkJCurq51dXVOTk5tbW3FxcU8PDx3d3exsbGdnZ2Dg4PbhN9oAAAY+UlEQVR4nO1dCXuqOhM27Ai4oCgooKjVauv//3sfSWaSgLgVbM/9Hufep8eNkDezTxZ6vTe96U1vetOb3vSmN73pTW9605ve9KY3velNb3rTm970pkvS/7oDryGLEIOoZOr/V0hNMsuyaZ5PvHmxm8y/dt+eSxrIMs37jf2LI2MGp5VWI3u0W29223lRFJ/z8u9uso6TKGDsvd3aP4iQkOF5UUfYTPZos9kT8tc9fobMkifx3HkMH6AcnO/y8V+h0ryQ48qzn8HHMO7394X176nsY/9ULK+y7xZfHXu5y29j/HNtJGSyGIUNnQ/9wadXzIvV4eOQHM677XZ7RUfDA/lnNdKkunfZZf/7NN03OYnguFk0sTSkVucfFFaD9CbLWlcXu3VWg5XW3m8HfgPIxeSf4yMh7mqgqpS3SZr41kSTJqP0OSPWX4NSyCC5J+XNXn7Hj6LjNN01MHI3/nfYSKIvlX1J5CZJPMv2AZkG/X46Tk2rdwdj//PDc2xtslEaGvT/EW0sxUxaT3vp7ai9zPcxRRhZ4/4wSq1jlpwOST+6gXF2iOLNV54rtso//wuSSsjBEz3KsuN1COOjnq1XH/E1mNvSFQYzQpJESvxX+teSSsh6JG2DSdL+HWm03P1ps3Yb9XT8QQ1tUjYxFIwMsz+FaJFcjvaMdlK/AxCg5IePcdMXk2npCNmrRIjq+Q8hkuGn6Meoscc3aJZnDe7kjMyNdqLp1Z/ZGxKjg/eGhyfxMTpGguWiEDDB6GcvDc7mbyBa5Bsk1KuHLY+QYZT/U6WdumRoEtOw4IvvDfvWIkr8sP4LQSUpeC7/81n5NIb6bE7SoGeF3x/xnMrqlAwFO79nwE2J0P59iIR8gAv8NIm0/n3zKipLfdeLjsQtGZjB4ICM0qtLY5xM2EeKmGrOgfxq3mSSrHDQChBFiYIKjjop+UWJZShDcLy+/MSir2ff9Cfp50hJPDLyi0U6i4j60kn20LrrKNSsQikxBvxzXZfDc1rRXwzJajIXMXn8e4JKjALv+nD2cJemU3zFBmq9xVeuyJO/fwsiMTFIC7fEMokVlH+DjoAaJbEXB4z+ekTETCuS/grANSrHUhR3e+73bHjVyMjuk/u/EXRCoTeJ8P0f5uvZaJIPEcQoAbRJAjfbDsfT6eQJELdpLV9+C0FNXgzRtMgBNX/U1KvHolJB9YJGhdyVfL1JVvy+y5dmU7o57k9QRBfV7lRnXx6l2/zOT/L1mWx5EWD3wgBO75HsjOLi3UvZu6BcpljJAdWjeJmclgCnNoqod797XejjTL5c52T+Iqehi3+JcIOf99CVQus+qZONpIT0a5Ms0Ql3DBGJzBBgca9j+8ZJwh9QlMvX3yTXXgrRJFht8oYd9f8BmhnChukTAqEGDcNfEIcLv/uADnZIU/kyy6e25GLnCMkaGh88YkJuphhXqSnPtI7SEZ1NLJoMug/DLRNr0tyC5zdxDrNHUo1LMhpGRqndRR8zZOJn127RTGNfldHh7LIrr6KtfHnMROVr0zETTRdDw/PvQUP6li83M5ETR0anCC0XDOngWjcMklTetaLq5ZFSx8tFnlF0KqemiO7X5AoFROGuqbeDWVPHTGYx26NgYpJ2CDF1QQsbE4pL6tOEOOrK7ZPgIBLsKBeZ1LxDTTR1bDa/1ok7/JqRVqZpL+V0Lqr9pw4RWimwcHGtC1Xk0+nlL4atkpFEDJB+xpnKtLtM0ewdoNHG5QbkKgcroJp83UNEG+9lIln+OEJnVt3x0Bx7KPkPEgtOrNmn6lp6V4tVdyScfT2VlvoMWZTfnTElOGrP1g5nEtSjdvXq73IR22wxxdh2xUTTgEFbPofPIvtm32LdgDu9WrqZwL8BjndpFTpCKArck2s3rxBzFPRPMNSbp2xofmw0x7WmAS7GNerDEMdcsT9SrJ/as24gWmP/TjhTJZo8olWJbxbTkOrz4ldYfKLgrfLHKKVd1TNEOHNfC8W4W8ChHYaU6S3vf83I1pCawil63YopWaDpep5iLHlaXZQFIuYUe5KJvt6FNTWJ84QWtoy479CBSUJA+pAGONMu8gsxYM9O9F6hcgySnzK0T7NvquNY9OvE6aPQb+/e/xeIMbHMWzDB6EIRrT5vzOmIhS3JLU0YtXhgG8IOxJSceFu7dj3rSj/pdDG101gW66CWQaAwcjVteox6XUGkmkjXADgYZrW1phaYLb+lkN4K1J6ifUadviXmhVuvCENLWrMzt0umnc2RNlFpa2gwiJNgHmNii+owBDROdSWhunR7SrmbbW+tG+2Uejyk7WPkNrZaIiyaLOlASRSXWkYrfBt4e8G/G8tNf0ZHkpppT0yiHNqJqQlrywrlDkkydeT0GqYy8hc0yjTdZFWsdRqtdVFfrQSuNE53iYuxacvo25g60IwkhtnHAgWuW7BTA11ClBQ8G/Fjoucs0BpvvdH8kpvjY2N0s5+ck2apjw8ZXrnV0Jq2Qkhi3oxaKGMzB7yqaEjHpA1hqLO5XPJdjsO6/DDlaxjtjVq36c22o1ALF+daES7asiEMF0r2nE+8hbdYfA7Ke+/okJkymNRaIuQlKEftgs3DJUCI6wdt/mUgpokZfZAyuYjFPoNwx3k23Xz6Ps6x2AMvCQR/t3J8FkL5R2qbzoIlnWN8H7QquZENawRyXyaFhsLDkjD/D9m7Y23TRFF+ZlW2mbDlFfvazhpti4ZK3dOghWDB67uouM7grdqZGlgcAKZTp4Zyyj4RJRtUB4bQrO8KYQMBCOG7La3EweTDaIsD5POaFdPq5aZYwDUs6Q54H9xkA2znZg6lpZ2pgWZghA0qY4cqQlxWtxQM9ZMZmW2hi2kegbV1SbpirKPxH/Oyi29X9pNFhSbrv0E1k48By7oz9pIFxtw72y6VJ5yiabf6BKJSrF9QbeGmBYrf4wJFkHJrTMXJhgiWcz8778eO4CbjEe31hA8+kQEmuwXrdLyPsS0OnN+Rrx4aoBzgULfMoEzQcQxhXBfDJUAYr5fiPgDqhAaTOawVGUe2YAFXqTVIIxe2k8JDKsiOu1c00kNxdI6KaHo0tInEnVsE34gwApdrxjUeHnFakX7g0n8HYiE0W8P8RcyjHHY+CGHEv+NtmDKmYJHYIOAW7chbLgMGJkdLU8H9yao1aIyjNsYUEvwM+UJ9kS3Hv/SACkKmhaMZVNUM1sXyd1xKP/inBw7blYILMcMCxfETQ5gv/JwPAW+We8Ev9hsUn30bMQVtEsGmdSQB67AITMWGCxBSW6y2y7aMpUOD/QTinW/OzyNKIEous1QrEGdDDoZmH2GUuZQaA2Q4wcy1HLw2CLkzkLGVO+Z+SMSleBsPdUQURoOcX8p5CMaK9TbjUooIPUTIhkgEiH0uhRPwybDlqJAI0Xe2mr4Ahy4TfCPltlt4ixrCUInB8pDdnufQG1ov7lkO72yFhxtskPFHzoVy3u1AMsH7zzlqymhE2Kq2D3xRt8RwhKLCj1Ja8B7ZSiIZO/xz1vFVqTmWRXiXjCnII6MJNsikQ05RcgRnEFcQggHnGiVwiE47f8jHUc0O+fI9MRmMPCy4PjlR7ZcF8HDCtGvIujTl/37B71hPwzG3YY7MQDYwuqmGfMt23LZzPkOwYM/a1NsgZFGnfpOqlKLHLxEyCVTSITY1XhBzCVKK7AqHPPQDjTs4wKMhRajMHczhc53f8TzHmBBuDmmN028BEBNgoYcmeugRVpbQW+z4S3WKEXjIEc4luzzwlSeyX2VnGKL1niunstiD86hMTrQqhZBXZfB+04KHFreDmlhS7uLIifWJKKUrnuMoqbIRA6OYZHGxZi/X0LmTyNM1e1em7nkNIce+qSH0T/2KOylltg3CYYh3EcT9h7A0iHDH9UaZvjH3cCmDNZhuC5+15rgorXIP/oyYAY8HFSEYYMNiIDReMQL5QYRZi6jNckX3BXEehmhRMP0pGMJQrcnlHGFcE7KCWJWDJezFyWRTjywaUPSQWxUPTdGuyBeVEcDEbUp+XmozZqL7tXZDYV7lksW5Vi13MISrWobOHFvGmclVQMgls2qhnDX2Kwh9PrrK8l0MvdtU9g3I7UKl36tqt3AB/Y535MJzliFVNaHnXaSvEu5NfcTEECrewsGGuUyXspmG6hp6XBy1acFDsXZdcRc8CZX6BoWaA7eyau0w4xzrqYn/51pKwoSPl48OhnsmOUY29J9DoTzUfYnQEGW+NumTQKiYGiEyDN4OvdKBW/cPBeEExkY1FCjFtGFqd8urQ1yo4GFDnEB+cuQhzTgGKg9RwR3r5whRSjV/LLg458M2G5M9ccMRIsz5N6qUzuFzzhvHowgwSxnzr6iu2kfOEpB3IQU8HKXfMtVfcjYrlgY30Q5a6KHgoRPvMGdgNnxOtgn5KuVwBFJqj3kP1T3rzJFExOAIPeZNsJUxmOMNL0IZJB0DQiEuUMh0OVaH6W+hLWX9GzvXpiZsgLfQ7EzsgGFaVZDlnmhl8FUEAxhHLkzqZhqGDP8tL6HcxmVgW1m7Atc6BCkVmedZNHzQ8FdzlYc4OeMELfRQFJalfvEYYDufEG2VawswI77Jh5orqCERJohwxybfkYff0Ocj/5dNoIbAayAuHDQ8P6GQlkbAAa01YlETdvo/L2NYYww7ZdwGtbFRSDQHI8PyLkOwndSUDCOdxgiUJ06J1gPpK229hlYl4ciGQ8XS+IJpgIYPDHdQ/OMvmefEhomda7P3QpRDC+SM2PCgLUL6v4Iw4kPBjtpZRRyhT9BGRgyCW0XoxhyhRdeQbNjvRLTExR9cCvBwUcnk0A0dWwSmomBrn3SOMGo+bc2mjKDBy4jVjQ2U0rnoKmH+vQ/f5cAVqmJH+AyUHqx2j48eTXzPGoYYnzRGQzJgfL/aTOXDuJYje8Kxq8wsVBFSY2jL4GAEvF8oCFNY+4YIE02J9Lh4gMrnKIFcDwv24TeTBSAdBtu12kwBY/yOUVpPR91z5rkjNlwyKWV+S4ZzQahx/WUIbcKSfZTSLeRTVOgFQj4UMAfHDY0zhWGY42Uy8u0BwnZ1GuFVYRdTT0fM5S3nMh5j0+C0J3KtO8vjM4IJFi/U4/wAeomTysMdNgxgNAhTqePjbvKjElPwgDdstcnLQtMpkxrMWSYpKWQ8xlICGkahsU+tA142B4Q02USvMwGEXwsFIQT1/BAJWGxBAdHIiqfWZ8WqkzWUG1udsmQcKxt/DXlnqhg7idBnE282k1KLuvXeYYNXfQFCOgOAE7s5TJS7nwpCUL0jW5wHORcroGiYop5whoa9YX1b7lvgkxMXZbiIlgakNDwRM048DUaAGXPG8DWJWejGjh+aSNYQZt0xqkvgko+5qIQSLFfs6DJjWEDAq5MaFhBzGdXFkHu3O3tQ7wt3IWbVec4C94m/YAS4Qx5wwWThNeROKKUO/xprWmv0cBWEDrTVS1EZuOEKMV1LhBqUIfGID227ZV+6qFKIY2iYjRNl0VWhImTGcMFsUp9dyJxXgQg9ycM5dvVLtY4wXHsynoaKctB26wiPGY8knJbLhHVpWLAXvJqCxUQ8aw/DRk2oDItoUuQsG4KVROhxD0dDClv6cKhih5sNWGl7Mj7yFvj9M1spY0DVo+XSPeEQRZlwwxBipjEFHvLyCs9JbWr/EkdwYIAycJIDtWKF4VLh5rKKUbqF+pGtS4GFX7hXknyutUWLEgZHiNmFKArzhFtEh7iUNUWZK3GJyfCN4CYboYn0hzuE/8mdOiVDzoIgbQXHgYdqnQTmltsBFKsv5dAxbxGK4n11aymb0R7lOjCOez8qBpPS9NJL95BZbeglNJmdV6Y6Iq8CECtgCwSWqRXjkCNse3oUVlmEG2LMsWeV29RmyuarPVNfh8doNNQhVCJPgNAAhPwCKQ8UfGXxDcYvC5zZOc6V/YHMLk1aL6FFd4ETRRyDnEQDhBhp8Lx7OQId4TRY8AmbE0PKaIXx3UpKKYf4DZLq72Q9b4A8HB6WcikuG/tR3KIOxRFCtVDIZaYIJaFS5tG4M5HvBYkfxbDjMpOF1xVqlhJLGzCBT6XEEWcoAbe4HXDXpQMCjOMB6k9LhBh7C5dva2rleatt8pGjrDcV0bh/sRZx5omlxiun4EP2Ua2T8xHZbqrLyheoJXo+muFaTFwxlLdeB+3XTI0vVwXRkaRg1U2xET1FzlkudsqmLtwPJbcjRmhe9uh5LvaqKeRpDqjB7CjagPDAb71aXyTBBxCP6OP28TRGNEuihzf9znywHeaN1eGevQTFx7UsZV9slK3WCDHllQdcVmbbHqdGLg2nqOCG8rdGcx+zt6PcA4dGvP3mLlGVF3Nsm/oC3sf2MDciNB85H2Tqied+CEe8QRvfGmBPhKbFQzjuwfzRVcm+fkJq8NWNJaVkGmgdnzyE/BKd2ID53HUWMcbqDk22PeULpbQ9Qlk0fe4g3Sumg5nYpw5YWNd3JAVmCdrrjoc9MVE3emrfoHVjIxE1+Q/La1E3zGZapl0d7s/rmWKd43Pb1a/L4lPKuHObPo1El7rYKCvCB6fpXldhdLOZa9yg/YYsTHdzsIKYqQuf2d1kPr0X9sE93Yy4bbAX3RzhgkujnmJhMz20P1+hq5LOc5ow6OhYBYxrfnQqeYWeO+AkuHpYSGxDENINQLFmP7x2w8dp1h9bD2voZ9O5GuxiiEK6e6gArl25dj7NEzSOHz9cacTOiWj6ZgGuoruToqBJv+HwoKch3ns8hCQWql0y3MDd6pMOz1FCr3/99I8X7GY3Ll4g8cJDOOzwxF3T8GsJxj3q4lC+K/oaQGd6nR67J6a3H7SnPz0U6gGAuDKgsyOGECKUpJaPbeyNfrL/twlSw1DtmatwHnko5HMQIcXw4tv356TrfCLRwAjcFH8oNTq6xsYuUJvguro+GpIe2oZrS5TY7brlDyISZL3jmPSSaZDqxKVmmB6NRc9QIm6THamkW3Vk8j1MNLRYJ3SN+AYK7cFkP50O02QYjUtEeUCmETnS547oVhm39SySGqbIH1UsmChdPWXCID3vRSzsKWW3u3ayekiEabH6isE6aBlMQg3LUoWSvrFIL+bXbQ0psXWofaiJy8M99aAzhLiwXXMuj4zS92R6Ffj1MM2q/oL/HV+Pz13cnhEOX3I0uzgU6yJANUl/ml95no5VsyAIF6NwBT4/4+xqFmXIWYMXPebKEmu+Fo/4O37iV58YVR42MvTBYBwBvuzBOvLRD1dPwVRoTHT6qJyIpHdPOxHsrAzGhXTjqoIu6sDNZIq6G31w391u63qvmdc/KXAYYs9wB7Mx14mIJUSa1/Lc/OdPsclAR5yXPohNeIyHTxlkZF1lG/28D0lZfCb9Kyf7BWT4gUZg9NJnlJnKFpgHDxWmNLy0m4zWU91w598QxB0y4l5JsnX5JJa2R9LcI74agdPylj5VbUazTOYTi7ixnDFrJjY64glTny9/WKDU9xJiy6mMu9OMfe78Uzl7PvqFh+gS9YHwl3HMC87BGn+IJRp+2n/9gwKV5y9dnJH1CjJP8viWpfsrT0KsQNQeePah+1QhOJZyUepyNleWghVk9juPlrUMZe1S2EH9rUK6dLQmHKIgAFq/9exc0le23PmvElTTqKzPcT6I+XvPByRDBaLzk5rMA2TIR7xRWXF/9xmPRqpy8TUIxdJPLqFt11le0u0GLaJYgFc8XIf6f7Ea01n/poQiqToyaj8tdUFjV9xgMC0l9PcRmrAfACR1dXP69Kl8aRqRaa7sV/kqJTT9fYA9OjlcOQxgfs01GqSe59+mbTFSxm4Xl14+/ZWnVzZAJIfKcXGjdVOIbZmyznQX5+z8WTn1zS/l30qH3dXTnsbYLyqLs8Nwvq2x0pClKKwyWspksIr5sFvaWoU2fdIzjn8ioUgWSee1XmnOqpLHWkS3ArXE3cjM/WZRb0dbzIjV02P3rx48DmSSZFU7TvD7+Cl3Dpc8NNmzZlOCSxU4vFKg3T7L/rK1d4GuDLNPNFMKos6nYJ4lvVf22J1XFNL3NXsup2QMkuT7Awl6ZDwlh7OVnJP9NovyuFSzXeHVNyF41NU6G4Nlgl0+86gFUVuyG9Q66kym+9UmPZjHNVvgs4lOn3O/fOltfKfkmd+449bfuiSz/e2Q5kl/4ASvk0Xc4kLUSgxLZ4XQffbBTQonJcd7JNJf+szYn1Hao8ncPQS3aTk/8gzXanmG9UuI9qcMRy4N4uP4kp4swvxr8ATRg4B/hnF5JqJC8c/CY2SRYLarW8e7RNfJ/xtG8xFigdv3/D4sQfRU2X/Nct4jinI2WdO92hr3lDY1QsoWfime9ixOh3/d4Z8Q9ZFlEll8kTD0N0U83k3y4X79HYaaV9hzxxstF8XqdLAi6z8koDUy+2VI1ycbd6+vk7VLjLHBjqR3SUwOUMAyzJrn+y+JKn3snq5b42Gvr7uk39fHehAEqTE0e6VXb/lQg3+G9KCnp2VsWf5nlpaEGROG6xq44D+P+g4As/+fR0hJ//+Qzze96U1vakH/qQD5TW9605ve9KY3velNb3rTm970ppL+Bxo+juy3bujjAAAAAElFTkSuQmCC" alt=""> 
+                <p class="featured-desc"> Welcome to Shadow Video
+                    Join Prime to watch the latest movies, TV shows and award-winning Free Originals Contents By Just  <span style="color:ff6d2e;">₹149. </span> </p>
+                <button class="featured-button">WATCH</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Classic Thrillers</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/A2D5FA05-208D-45CC-9394-7AA4BEA8ED8F/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:58:33Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/56FEEDB4-250A-4718-B3BF-F04E204BEBE6/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:50:12Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/3B231226-EF16-442E-815E-AAEAF5108338/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:48:47Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/4B436E0D-B442-4647-9014-5D46B0B3DF37/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:57:12Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/BDB45E67-D4F1-4514-B186-A8C0B4CEBE48/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:36:53Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/AB4E98DA-CAA5-48C0-81A8-DB20084EE026/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:57:31Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/C6D49DC4-C4D5-495B-86C5-AA6EC41CE315/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:51:49Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Cop Drama</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/C95494C7-1FEB-4697-AF56-267BAF635B3A/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:34:40Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/C6DE0F89-3C79-4E94-9324-913D1BA65563/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:31:46Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/28C23325-8C74-4C7C-9D13-7C0C4D750A51/0-2x3.jpg?width=305&updatedTime=2024-06-28T01:27:44Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/453B2F68-246A-4947-818D-2F3152B54BD8/0-2x3.jpg?width=305&updatedTime=2024-07-01T11:12:18Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/AD64848C-39EA-4568-98A3-4AA88B49C928/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:35:28Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/3077F344-B063-4A67-8B0D-EAE60A3CD754/0-2x3.jpg?width=305&updatedTime=2024-06-28T01:48:03Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/85D56847-BEB7-4C31-8F03-72FB55EE3FA6/0-2x3.jpg?width=305&updatedTime=2024-06-28T02:30:21Z&dt=Web" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    
+    <footer>
+        <div class="footers-top">
+            <span>Questions? Call <a href="#">000-800-919-1694</a></span>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-item">
+                <a href="#">FAQ</a>
+                <a href="#items">Investor Realtions</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+            <div class="footer-item"><a href="#">Help Centre</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="footer-item"><a href="#">Account</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+            <div class="footer-item"><a href="#">Media Centre</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="final">
+            <select class="btn last-btn">
+                <option value="">English</option>
+            </select>
+        </div>:
+
+        <span style="font-weight:lighter; font-size:14px; display:inline-block; margin-top:20px;">bHa India</span>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
